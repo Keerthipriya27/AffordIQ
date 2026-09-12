@@ -1,0 +1,114 @@
+{
+  "total_validated": 250,
+  "passed_first_pass": 235,
+  "repaired_count": 8,
+  "fallen_back_count": 15,
+  "final_valid": 250,
+  "initial_failure_rate_pct": 6.0,
+  "final_success_rate_pct": 100.0,
+  "violations_detected_by_rule": {
+    "installment_matches_supplied_option": 15,
+    "no_unsupported_payment_option": 15,
+    "spending_changes_flexible_only": 8
+  },
+  "number_of_repairs": 8,
+  "number_of_fallbacks": 15,
+  "repairs_sample": [
+    {
+      "request_id": "req_049",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_054",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_101",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_119",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_129",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_179",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_189",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    },
+    {
+      "request_id": "req_199",
+      "rule": "spending_changes_flexible_only",
+      "action": "Cleared invalid spending changes to 'none'"
+    }
+  ],
+  "fallbacks_sample": [
+    {
+      "request_id": "req_026",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option']"
+    },
+    {
+      "request_id": "req_049",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option', 'payment_plan_safe_throughout_90_days']"
+    },
+    {
+      "request_id": "req_054",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option', 'payment_plan_safe_throughout_90_days']"
+    },
+    {
+      "request_id": "req_086",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option']"
+    },
+    {
+      "request_id": "req_101",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option', 'payment_plan_safe_throughout_90_days']"
+    },
+    {
+      "request_id": "req_109",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option']"
+    },
+    {
+      "request_id": "req_119",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option', 'payment_plan_safe_throughout_90_days']"
+    },
+    {
+      "request_id": "req_129",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option', 'payment_plan_safe_throughout_90_days']"
+    },
+    {
+      "request_id": "req_161",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option']"
+    },
+    {
+      "request_id": "req_169",
+      "reason": "Failed invariants after repair: ['installment_matches_supplied_option', 'no_unsupported_payment_option']"
+    }
+  ],
+  "final_audit": {
+    "total_requests": 250,
+    "rows_written": 250,
+    "duplicate_request_ids": [],
+    "missing_request_ids": [],
+    "invalid_statuses": 0,
+    "invalid_payment_methods": 0,
+    "malformed_plans": 0,
+    "arithmetic_failures": 0,
+    "safety_failures": 0,
+    "header_failure": 0,
+    "row_count_failure": 0,
+    "total_failures": 0
+  }
+}

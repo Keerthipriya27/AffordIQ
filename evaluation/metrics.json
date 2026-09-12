@@ -1,0 +1,93 @@
+{
+  "evaluation_runtime_seconds": 0.0063,
+  "total_requests": 250,
+  "rows_evaluated": 250,
+  "status_accuracy": null,
+  "payment_method_accuracy": null,
+  "payment_plan_validity": 1.0,
+  "safe_amount_mean_absolute_error": null,
+  "earliest_date_accuracy": null,
+  "spending_change_validity": 1.0,
+  "explanation_consistency": 1.0,
+  "failure_categories": {
+    "schema": 0,
+    "duplicate_request_id": 0,
+    "missing_request_id": 0,
+    "unexpected_request_id": 0,
+    "blank_request_id": 0,
+    "invalid_status": 0,
+    "invalid_payment_method": 0,
+    "malformed_plan": 0,
+    "arithmetic": 0,
+    "safe_amount": 0,
+    "safety": 0,
+    "earliest_date": 0,
+    "spending_change": 0,
+    "explanation_consistency": 0
+  },
+  "difficult_requests": [],
+  "validation": {
+    "schema_valid": true,
+    "expected_headers": [
+      "request_id",
+      "amount_safe_to_pay",
+      "affordability_status",
+      "recommended_payment_method",
+      "payment_plan",
+      "earliest_date_for_full_payment",
+      "spending_changes_needed",
+      "decision_explanation"
+    ],
+    "actual_headers": [
+      "request_id",
+      "amount_safe_to_pay",
+      "affordability_status",
+      "recommended_payment_method",
+      "payment_plan",
+      "earliest_date_for_full_payment",
+      "spending_changes_needed",
+      "decision_explanation"
+    ],
+    "rows": 250,
+    "duplicate_request_ids": [],
+    "missing_request_ids": [],
+    "unexpected_request_ids": [],
+    "blank_request_ids": [],
+    "invalid_statuses": [],
+    "invalid_payment_methods": [],
+    "malformed_plans": [],
+    "arithmetic_errors": [],
+    "safe_amount_errors": [],
+    "safety_errors": [],
+    "earliest_date_errors": [],
+    "spending_change_errors": [],
+    "explanation_errors": []
+  },
+  "sample_comparison": {
+    "comparable_requests": 0,
+    "prediction_ids": 250,
+    "expected_ids": 25,
+    "status_accuracy": null,
+    "payment_method_accuracy": null,
+    "safe_amount_mean_absolute_error": null,
+    "safe_amount_comparable_requests": 0,
+    "earliest_date_accuracy": null,
+    "spending_change_accuracy": null,
+    "comparable_fields": {
+      "safe_amount": 0,
+      "earliest_date": 0,
+      "spending_changes": 0
+    }
+  },
+  "model_usage": {
+    "provider": "Google Gemini",
+    "model_name": "gemini-2.5-flash",
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "average_tokens_per_request": 0.0,
+    "estimated_total_cost_usd": 0.0,
+    "estimated_cost_per_request_usd": 0.0
+  }
+}

@@ -1,0 +1,26 @@
+request_id,decision,recommended_option_id,payment_type,start_date,total_cost,installments_count,installment_amount,safety_cushion_min,explanation
+s_req_001,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1270.00,Not recommended. Projected cashflow breaches your 800.00 EUR safety reserve across all evaluated payment plans over 90 days.
+s_req_002,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,-4009.70,Not recommended. Projected cashflow breaches your 800.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_003,BUY_NOW,opt_full_s_req_003,FULL,2026-09-12,315.90,1,315.90,3684.10,"Affordable in full (315.90 GBP). Lowest 90-day balance is 3684.10 GBP, exceeding your 1200.00 GBP reserve."
+s_req_004,BUY_NOW,opt_full_s_req_004,FULL,2026-09-12,490.00,1,490.00,1060.00,"Affordable in full (490.00 USD). Lowest 90-day balance is 1060.00 USD, exceeding your 500.00 USD reserve."
+s_req_005,BUY_NOW,opt_full_s_req_005,FULL,2026-09-12,575.00,1,575.00,3565.00,"Affordable in full (575.00 USD). Lowest 90-day balance is 3565.00 USD, exceeding your 1000.00 USD reserve."
+s_req_006,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1270.00,Not recommended. Projected cashflow breaches your 800.00 EUR safety reserve across all evaluated payment plans over 90 days.
+s_req_007,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,-4009.70,Not recommended. Projected cashflow breaches your 800.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_008,BUY_NOW,opt_full_s_req_008,FULL,2026-09-12,647.40,1,647.40,3352.60,"Affordable in full (647.40 GBP). Lowest 90-day balance is 3352.60 GBP, exceeding your 1200.00 GBP reserve."
+s_req_009,BUY_NOW,opt_full_s_req_009,FULL,2026-09-12,915.00,1,915.00,635.00,"Affordable in full (915.00 USD). Lowest 90-day balance is 635.00 USD, exceeding your 500.00 USD reserve."
+s_req_010,BUY_NOW,opt_full_s_req_010,FULL,2026-09-12,1000.00,1,1000.00,3140.00,"Affordable in full (1000.00 USD). Lowest 90-day balance is 3140.00 USD, exceeding your 1000.00 USD reserve."
+s_req_011,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1270.00,Not recommended. Projected cashflow breaches your 800.00 EUR safety reserve across all evaluated payment plans over 90 days.
+s_req_012,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,-4009.70,Not recommended. Projected cashflow breaches your 800.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_013,BUY_NOW,opt_full_s_req_013,FULL,2026-09-12,978.90,1,978.90,3021.10,"Affordable in full (978.90 GBP). Lowest 90-day balance is 3021.10 GBP, exceeding your 1200.00 GBP reserve."
+s_req_014,WAIT,opt_full_s_req_014,FULL,2026-10-22,1340.00,1,1340.00,655.00,Wait 40 days until 2026-10-22 after scheduled cash inflow. Maintains a safe minimum cushion of 655.00 USD above your reserve.
+s_req_015,BUY_NOW,opt_full_s_req_015,FULL,2026-09-12,1425.00,1,1425.00,2715.00,"Affordable in full (1425.00 USD). Lowest 90-day balance is 2715.00 USD, exceeding your 1000.00 USD reserve."
+s_req_016,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1270.00,Not recommended. Projected cashflow breaches your 800.00 EUR safety reserve across all evaluated payment plans over 90 days.
+s_req_017,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,-4009.70,Not recommended. Projected cashflow breaches your 800.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_018,BUY_NOW,opt_full_s_req_018,FULL,2026-09-12,1310.40,1,1310.40,2689.60,"Affordable in full (1310.40 GBP). Lowest 90-day balance is 2689.60 GBP, exceeding your 1200.00 GBP reserve."
+s_req_019,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1550.00,Not recommended. Projected cashflow breaches your 500.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_020,BUY_NOW,opt_full_s_req_020,FULL,2026-09-12,1850.00,1,1850.00,2290.00,"Affordable in full (1850.00 USD). Lowest 90-day balance is 2290.00 USD, exceeding your 1000.00 USD reserve."
+s_req_021,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1270.00,Not recommended. Projected cashflow breaches your 800.00 EUR safety reserve across all evaluated payment plans over 90 days.
+s_req_022,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,-4009.70,Not recommended. Projected cashflow breaches your 800.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_023,BUY_NOW,opt_full_s_req_023,FULL,2026-09-12,1641.90,1,1641.90,2358.10,"Affordable in full (1641.90 GBP). Lowest 90-day balance is 2358.10 GBP, exceeding your 1200.00 GBP reserve."
+s_req_024,DO_NOT_BUY,NONE,NONE,2026-09-12,0.00,0,0.00,1550.00,Not recommended. Projected cashflow breaches your 500.00 USD safety reserve across all evaluated payment plans over 90 days.
+s_req_025,BUY_NOW,opt_full_s_req_025,FULL,2026-09-12,2275.00,1,2275.00,1865.00,"Affordable in full (2275.00 USD). Lowest 90-day balance is 1865.00 USD, exceeding your 1000.00 USD reserve."

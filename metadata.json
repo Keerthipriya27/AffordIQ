@@ -1,0 +1,6 @@
+{
+  "name": "Buy or Wait",
+  "description": "Deterministic 90-day financial forecasting and purchase decision reasoning engine for the HackerRank Orchestrate Challenge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
