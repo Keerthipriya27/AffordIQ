@@ -9,3 +9,5 @@ coverage/
 .cache/
 logs/
 dataset/
+__pycache__/
+*.pyc
