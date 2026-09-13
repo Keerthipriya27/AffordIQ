@@ -15,12 +15,16 @@ decision logic.
 From the repository root:
 
 ```powershell
-python -m code.main --dataset-dir dataset --output output.csv --requests-file prediction_requests.csv
+python -m code.main --dataset-dir dataset --output output.csv --requests-file requests.csv
 ```
+
+If a challenge dataset uses `prediction_requests.csv` instead of
+`requests.csv`, the pipeline automatically falls back to that file when the
+requested `requests.csv` is absent.
 
 This produces `output.csv`, `output_optimizer.csv`,
 `candidate_plan_diagnostics.json`, `validation_statistics.json`, and the
-frontend-safe `dashboard_data.json`.
+frontend-safe `dashboard_data.json`, plus the root `log.txt` execution log.
 
 The decision path is deliberately staged:
 

@@ -302,10 +302,13 @@ class CandidatePaymentPlanOptimizer:
         # Payment options are dataset evidence; never synthesize one for a request.
         normalized_options = [
             opt for opt in options
-            if opt.currency.upper() == request.currency.upper()
-            or self.simulator.converter.has_supplied_rate_on_date(
-                request.currency, opt.currency, request.request_date
+            if (
+                opt.currency.upper() == request.currency.upper()
+                or self.simulator.converter.has_supplied_rate_on_date(
+                    request.currency, opt.currency, request.request_date
+                )
             )
+            and PaymentPlanGenerator.is_option_eligible(opt, request, profile)
         ]
 
         # -------------------------------------------------------------
@@ -353,9 +356,6 @@ class CandidatePaymentPlanOptimizer:
             opt for opt in normalized_options
             if opt.payment_type.upper() in ["INSTALLMENTS", "FINANCING", "DEFERRED"] or opt.installments_count > 1
         ]
-        if not inst_options and request.allows_partial_payment:
-            inst_options = [self._create_default_bnpl_option(request)]
-
         for opt in inst_options:
             schedule = self._build_schedule(opt, request, request.request_date)
             

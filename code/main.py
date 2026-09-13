@@ -48,6 +48,15 @@ def run_pipeline(
 
     # 2. Ingest Data
     loader = DataLoader(dataset_dir)
+    requested_path = dataset_dir / requests_file
+    if not requested_path.exists() and requests_file == "requests.csv":
+        fallback_path = dataset_dir / "prediction_requests.csv"
+        if fallback_path.exists():
+            logger.warning(
+                "dataset/requests.csv was not found; using dataset/prediction_requests.csv "
+                "as the available production request source."
+            )
+            requests_file = "prediction_requests.csv"
     profiles = loader.load_profiles()
     raw_events = loader.load_events()
     messages = loader.load_messages()
@@ -377,7 +386,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Buy or Wait Financial Engine")
     parser.add_argument("--dataset-dir", type=Path, default=DATASET_DIR)
     parser.add_argument("--output", type=Path, default=OUTPUT_PATH)
-    parser.add_argument("--requests-file", type=str, default="prediction_requests.csv")
+    parser.add_argument("--requests-file", type=str, default="requests.csv")
     args = parser.parse_args()
 
     run_pipeline(args.dataset_dir, args.output, args.requests_file)

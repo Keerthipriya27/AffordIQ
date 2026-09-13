@@ -1,0 +1,811 @@
+2026-09-13 19:01:08,886 [INFO] [optimizer.py:267] Request req_adv_001: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:08,891 [INFO] [data_loader.py:193] Loaded 6 exchange rates.
+2026-09-13 19:01:08,920 [INFO] [data_loader.py:193] Loaded 6 exchange rates.
+2026-09-13 19:01:08,950 [INFO] [optimizer.py:267] Request req_test_02: Winning candidate cand_full_opt_full_no_austerity [full_payment] with option opt_full
+2026-09-13 19:01:08,950 [INFO] [data_loader.py:193] Loaded 6 exchange rates.
+2026-09-13 19:01:08,967 [INFO] [optimizer.py:267] Request req_test_03: Winning candidate cand_full_opt_full_no_austerity [full_payment] with option opt_full
+2026-09-13 19:01:09,191 [INFO] [main.py:38] =====================================================
+2026-09-13 19:01:09,192 [INFO] [main.py:39] Starting Buy or Wait Financial Reasoning Engine
+2026-09-13 19:01:09,192 [INFO] [main.py:40] Dataset dir: dataset
+2026-09-13 19:01:09,192 [INFO] [main.py:41] Output path: output.csv
+2026-09-13 19:01:09,193 [INFO] [main.py:42] =====================================================
+2026-09-13 19:01:09,195 [WARNING] [main.py:55] dataset/requests.csv was not found; using dataset/prediction_requests.csv as the available production request source.
+2026-09-13 19:01:09,195 [INFO] [data_loader.py:83] Loaded 5 user profiles.
+2026-09-13 19:01:09,198 [INFO] [data_loader.py:116] Loaded 11 events.
+2026-09-13 19:01:09,199 [INFO] [data_loader.py:133] Loaded 2 messages.
+2026-09-13 19:01:09,199 [INFO] [data_loader.py:150] Loaded 3 image records.
+2026-09-13 19:01:09,199 [INFO] [data_loader.py:178] Loaded payment options for 5 requests.
+2026-09-13 19:01:09,200 [INFO] [data_loader.py:193] Loaded 6 exchange rates.
+2026-09-13 19:01:09,207 [INFO] [data_loader.py:223] Loaded 250 purchase requests from prediction_requests.csv.
+2026-09-13 19:01:09,209 [INFO] [main.py:106] >>> Processing Request req_001 for User usr_102 (Amount: 127.00 EUR)
+2026-09-13 19:01:09,211 [INFO] [conflict_resolver.py:60] [RESOLVED BLANK AMOUNT] Event ev_102_rent (rent) blank amount resolved to 850.00 EUR from verified Image img_rent_02 (confidence: 0.9)
+2026-09-13 19:01:09,241 [INFO] [optimizer.py:267] Request req_001: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,245 [INFO] [main.py:106] >>> Processing Request req_002 for User usr_103 (Amount: 154.00 GBP)
+2026-09-13 19:01:09,245 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1200.00 -> 1400 per message msg_002
+2026-09-13 19:01:09,263 [INFO] [optimizer.py:267] Request req_002: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,328 [INFO] [main.py:106] >>> Processing Request req_003 for User usr_104 (Amount: 181.00 USD)
+2026-09-13 19:01:09,407 [INFO] [optimizer.py:267] Request req_003: Winning candidate cand_full_opt_003_full_no_austerity [full_payment] with option opt_003_full
+2026-09-13 19:01:09,414 [INFO] [main.py:106] >>> Processing Request req_004 for User usr_105 (Amount: 208.00 EUR)
+2026-09-13 19:01:09,447 [INFO] [optimizer.py:267] Request req_004: Winning candidate cand_wait_3d_opt_004_full_no_austerity [wait] with option opt_004_full
+2026-09-13 19:01:09,451 [INFO] [main.py:106] >>> Processing Request req_005 for User usr_101 (Amount: 235.00 GBP)
+2026-09-13 19:01:09,457 [INFO] [conflict_resolver.py:60] [RESOLVED BLANK AMOUNT] Event ev_101_util (utilities) blank amount resolved to 165.50 USD from verified Image img_util_01 (confidence: 0.9)
+2026-09-13 19:01:09,458 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,459 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,537 [INFO] [optimizer.py:267] Request req_005: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,541 [INFO] [main.py:106] >>> Processing Request req_006 for User usr_102 (Amount: 262.00 USD)
+2026-09-13 19:01:09,544 [INFO] [optimizer.py:267] Request req_006: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,546 [INFO] [main.py:106] >>> Processing Request req_007 for User usr_103 (Amount: 289.00 EUR)
+2026-09-13 19:01:09,547 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:09,553 [INFO] [optimizer.py:267] Request req_007: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,609 [INFO] [main.py:106] >>> Processing Request req_008 for User usr_104 (Amount: 316.00 GBP)
+2026-09-13 19:01:09,612 [INFO] [optimizer.py:267] Request req_008: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,616 [INFO] [main.py:106] >>> Processing Request req_009 for User usr_105 (Amount: 343.00 USD)
+2026-09-13 19:01:09,619 [INFO] [optimizer.py:267] Request req_009: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,621 [INFO] [main.py:106] >>> Processing Request req_010 for User usr_101 (Amount: 370.00 EUR)
+2026-09-13 19:01:09,622 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,623 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,625 [INFO] [optimizer.py:267] Request req_010: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,627 [INFO] [main.py:106] >>> Processing Request req_011 for User usr_102 (Amount: 397.00 GBP)
+2026-09-13 19:01:09,630 [INFO] [optimizer.py:267] Request req_011: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,632 [INFO] [main.py:106] >>> Processing Request req_012 for User usr_103 (Amount: 424.00 USD)
+2026-09-13 19:01:09,633 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:09,634 [INFO] [optimizer.py:267] Request req_012: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,672 [INFO] [main.py:106] >>> Processing Request req_013 for User usr_104 (Amount: 451.00 EUR)
+2026-09-13 19:01:09,675 [INFO] [optimizer.py:267] Request req_013: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,678 [INFO] [main.py:106] >>> Processing Request req_014 for User usr_105 (Amount: 478.00 GBP)
+2026-09-13 19:01:09,680 [INFO] [optimizer.py:267] Request req_014: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,683 [INFO] [main.py:106] >>> Processing Request req_015 for User usr_101 (Amount: 505.00 USD)
+2026-09-13 19:01:09,684 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,684 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,688 [INFO] [optimizer.py:267] Request req_015: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,691 [INFO] [main.py:106] >>> Processing Request req_016 for User usr_102 (Amount: 532.00 EUR)
+2026-09-13 19:01:09,694 [INFO] [optimizer.py:267] Request req_016: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,709 [INFO] [main.py:106] >>> Processing Request req_017 for User usr_103 (Amount: 559.00 GBP)
+2026-09-13 19:01:09,709 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:09,713 [INFO] [optimizer.py:267] Request req_017: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,753 [INFO] [main.py:106] >>> Processing Request req_018 for User usr_104 (Amount: 586.00 USD)
+2026-09-13 19:01:09,757 [INFO] [optimizer.py:267] Request req_018: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,760 [INFO] [main.py:106] >>> Processing Request req_019 for User usr_105 (Amount: 613.00 EUR)
+2026-09-13 19:01:09,763 [INFO] [optimizer.py:267] Request req_019: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,766 [INFO] [main.py:106] >>> Processing Request req_020 for User usr_101 (Amount: 640.00 GBP)
+2026-09-13 19:01:09,767 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,767 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,769 [INFO] [optimizer.py:267] Request req_020: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,772 [INFO] [main.py:106] >>> Processing Request req_021 for User usr_102 (Amount: 667.00 USD)
+2026-09-13 19:01:09,776 [INFO] [optimizer.py:267] Request req_021: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,792 [INFO] [main.py:106] >>> Processing Request req_022 for User usr_103 (Amount: 694.00 EUR)
+2026-09-13 19:01:09,793 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:09,797 [INFO] [optimizer.py:267] Request req_022: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,850 [INFO] [main.py:106] >>> Processing Request req_023 for User usr_104 (Amount: 721.00 GBP)
+2026-09-13 19:01:09,855 [INFO] [optimizer.py:267] Request req_023: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,858 [INFO] [main.py:106] >>> Processing Request req_024 for User usr_105 (Amount: 748.00 USD)
+2026-09-13 19:01:09,861 [INFO] [optimizer.py:267] Request req_024: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,863 [INFO] [main.py:106] >>> Processing Request req_025 for User usr_101 (Amount: 775.00 EUR)
+2026-09-13 19:01:09,865 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,865 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,869 [INFO] [optimizer.py:267] Request req_025: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,872 [INFO] [main.py:106] >>> Processing Request req_026 for User usr_102 (Amount: 802.00 GBP)
+2026-09-13 19:01:09,879 [INFO] [optimizer.py:267] Request req_026: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,898 [INFO] [main.py:106] >>> Processing Request req_027 for User usr_103 (Amount: 829.00 USD)
+2026-09-13 19:01:09,899 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:09,903 [INFO] [optimizer.py:267] Request req_027: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,955 [INFO] [main.py:106] >>> Processing Request req_028 for User usr_104 (Amount: 856.00 EUR)
+2026-09-13 19:01:09,958 [INFO] [optimizer.py:267] Request req_028: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:09,961 [INFO] [main.py:106] >>> Processing Request req_029 for User usr_105 (Amount: 883.00 GBP)
+2026-09-13 19:01:09,965 [INFO] [optimizer.py:267] Request req_029: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,980 [INFO] [main.py:106] >>> Processing Request req_030 for User usr_101 (Amount: 910.00 USD)
+2026-09-13 19:01:09,981 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,982 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:09,985 [INFO] [optimizer.py:267] Request req_030: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:09,990 [INFO] [main.py:106] >>> Processing Request req_031 for User usr_102 (Amount: 937.00 EUR)
+2026-09-13 19:01:09,994 [INFO] [optimizer.py:267] Request req_031: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,014 [INFO] [main.py:106] >>> Processing Request req_032 for User usr_103 (Amount: 964.00 GBP)
+2026-09-13 19:01:10,014 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,017 [INFO] [optimizer.py:267] Request req_032: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,084 [INFO] [main.py:106] >>> Processing Request req_033 for User usr_104 (Amount: 991.00 USD)
+2026-09-13 19:01:10,089 [INFO] [optimizer.py:267] Request req_033: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,093 [INFO] [main.py:106] >>> Processing Request req_034 for User usr_105 (Amount: 1018.00 EUR)
+2026-09-13 19:01:10,104 [INFO] [optimizer.py:267] Request req_034: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,132 [INFO] [main.py:106] >>> Processing Request req_035 for User usr_101 (Amount: 1045.00 GBP)
+2026-09-13 19:01:10,132 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,133 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,137 [INFO] [optimizer.py:267] Request req_035: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,140 [INFO] [main.py:106] >>> Processing Request req_036 for User usr_102 (Amount: 1072.00 USD)
+2026-09-13 19:01:10,144 [INFO] [optimizer.py:267] Request req_036: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,164 [INFO] [main.py:106] >>> Processing Request req_037 for User usr_103 (Amount: 1099.00 EUR)
+2026-09-13 19:01:10,164 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,167 [INFO] [optimizer.py:267] Request req_037: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,228 [INFO] [main.py:106] >>> Processing Request req_038 for User usr_104 (Amount: 1126.00 GBP)
+2026-09-13 19:01:10,231 [INFO] [optimizer.py:267] Request req_038: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,234 [INFO] [main.py:106] >>> Processing Request req_039 for User usr_105 (Amount: 1153.00 USD)
+2026-09-13 19:01:10,239 [INFO] [optimizer.py:267] Request req_039: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,254 [INFO] [main.py:106] >>> Processing Request req_040 for User usr_101 (Amount: 1180.00 EUR)
+2026-09-13 19:01:10,255 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,255 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,257 [INFO] [optimizer.py:267] Request req_040: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,260 [INFO] [main.py:106] >>> Processing Request req_041 for User usr_102 (Amount: 1207.00 GBP)
+2026-09-13 19:01:10,266 [INFO] [optimizer.py:267] Request req_041: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,318 [INFO] [main.py:106] >>> Processing Request req_042 for User usr_103 (Amount: 1234.00 USD)
+2026-09-13 19:01:10,319 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,323 [INFO] [optimizer.py:267] Request req_042: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,380 [INFO] [main.py:106] >>> Processing Request req_043 for User usr_104 (Amount: 1261.00 EUR)
+2026-09-13 19:01:10,383 [INFO] [optimizer.py:267] Request req_043: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,387 [INFO] [main.py:106] >>> Processing Request req_044 for User usr_105 (Amount: 1288.00 GBP)
+2026-09-13 19:01:10,389 [INFO] [optimizer.py:267] Request req_044: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,465 [INFO] [main.py:106] >>> Processing Request req_045 for User usr_101 (Amount: 1315.00 USD)
+2026-09-13 19:01:10,466 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,466 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,471 [INFO] [optimizer.py:267] Request req_045: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,474 [INFO] [main.py:106] >>> Processing Request req_046 for User usr_102 (Amount: 1342.00 EUR)
+2026-09-13 19:01:10,479 [INFO] [optimizer.py:267] Request req_046: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,529 [INFO] [main.py:106] >>> Processing Request req_047 for User usr_103 (Amount: 1369.00 GBP)
+2026-09-13 19:01:10,529 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,532 [INFO] [optimizer.py:267] Request req_047: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,582 [INFO] [main.py:106] >>> Processing Request req_048 for User usr_104 (Amount: 1396.00 USD)
+2026-09-13 19:01:10,584 [INFO] [optimizer.py:267] Request req_048: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,588 [INFO] [main.py:106] >>> Processing Request req_049 for User usr_105 (Amount: 1423.00 EUR)
+2026-09-13 19:01:10,594 [INFO] [optimizer.py:267] Request req_049: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,661 [INFO] [main.py:106] >>> Processing Request req_050 for User usr_101 (Amount: 1450.00 GBP)
+2026-09-13 19:01:10,662 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,662 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,665 [INFO] [optimizer.py:267] Request req_050: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,667 [INFO] [main.py:106] >>> Processing Request req_051 for User usr_102 (Amount: 1477.00 USD)
+2026-09-13 19:01:10,672 [INFO] [optimizer.py:267] Request req_051: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,738 [INFO] [main.py:106] >>> Processing Request req_052 for User usr_103 (Amount: 1504.00 EUR)
+2026-09-13 19:01:10,738 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,740 [INFO] [optimizer.py:267] Request req_052: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,795 [INFO] [main.py:106] >>> Processing Request req_053 for User usr_104 (Amount: 1531.00 GBP)
+2026-09-13 19:01:10,799 [INFO] [optimizer.py:267] Request req_053: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,801 [INFO] [main.py:106] >>> Processing Request req_054 for User usr_105 (Amount: 1558.00 USD)
+2026-09-13 19:01:10,807 [INFO] [optimizer.py:267] Request req_054: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,872 [INFO] [main.py:106] >>> Processing Request req_055 for User usr_101 (Amount: 1585.00 EUR)
+2026-09-13 19:01:10,873 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,873 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:10,877 [INFO] [optimizer.py:267] Request req_055: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:10,880 [INFO] [main.py:106] >>> Processing Request req_056 for User usr_102 (Amount: 1612.00 GBP)
+2026-09-13 19:01:10,883 [INFO] [optimizer.py:267] Request req_056: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:10,945 [INFO] [main.py:106] >>> Processing Request req_057 for User usr_103 (Amount: 1639.00 USD)
+2026-09-13 19:01:10,946 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:10,949 [INFO] [optimizer.py:267] Request req_057: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,006 [INFO] [main.py:106] >>> Processing Request req_058 for User usr_104 (Amount: 1666.00 EUR)
+2026-09-13 19:01:11,010 [INFO] [optimizer.py:267] Request req_058: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,013 [INFO] [main.py:106] >>> Processing Request req_059 for User usr_105 (Amount: 1693.00 GBP)
+2026-09-13 19:01:11,018 [INFO] [optimizer.py:267] Request req_059: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,139 [INFO] [main.py:106] >>> Processing Request req_060 for User usr_101 (Amount: 1720.00 USD)
+2026-09-13 19:01:11,140 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,141 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,144 [INFO] [optimizer.py:267] Request req_060: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,150 [INFO] [main.py:106] >>> Processing Request req_061 for User usr_102 (Amount: 1747.00 EUR)
+2026-09-13 19:01:11,160 [INFO] [optimizer.py:267] Request req_061: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,225 [INFO] [main.py:106] >>> Processing Request req_062 for User usr_103 (Amount: 1774.00 GBP)
+2026-09-13 19:01:11,225 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:11,229 [INFO] [optimizer.py:267] Request req_062: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,294 [INFO] [main.py:106] >>> Processing Request req_063 for User usr_104 (Amount: 1801.00 USD)
+2026-09-13 19:01:11,300 [INFO] [optimizer.py:267] Request req_063: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,306 [INFO] [main.py:106] >>> Processing Request req_064 for User usr_105 (Amount: 1828.00 EUR)
+2026-09-13 19:01:11,311 [INFO] [optimizer.py:267] Request req_064: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,419 [INFO] [main.py:106] >>> Processing Request req_065 for User usr_101 (Amount: 1855.00 GBP)
+2026-09-13 19:01:11,421 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,421 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,425 [INFO] [optimizer.py:267] Request req_065: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,429 [INFO] [main.py:106] >>> Processing Request req_066 for User usr_102 (Amount: 1882.00 USD)
+2026-09-13 19:01:11,443 [INFO] [optimizer.py:267] Request req_066: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,527 [INFO] [main.py:106] >>> Processing Request req_067 for User usr_103 (Amount: 109.00 EUR)
+2026-09-13 19:01:11,527 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:11,533 [INFO] [optimizer.py:267] Request req_067: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,595 [INFO] [main.py:106] >>> Processing Request req_068 for User usr_104 (Amount: 136.00 GBP)
+2026-09-13 19:01:11,599 [INFO] [optimizer.py:267] Request req_068: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,602 [INFO] [main.py:106] >>> Processing Request req_069 for User usr_105 (Amount: 163.00 USD)
+2026-09-13 19:01:11,606 [INFO] [optimizer.py:267] Request req_069: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,609 [INFO] [main.py:106] >>> Processing Request req_070 for User usr_101 (Amount: 190.00 EUR)
+2026-09-13 19:01:11,610 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,610 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,615 [INFO] [optimizer.py:267] Request req_070: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,618 [INFO] [main.py:106] >>> Processing Request req_071 for User usr_102 (Amount: 217.00 GBP)
+2026-09-13 19:01:11,628 [INFO] [optimizer.py:267] Request req_071: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,633 [INFO] [main.py:106] >>> Processing Request req_072 for User usr_103 (Amount: 244.00 USD)
+2026-09-13 19:01:11,633 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:11,638 [INFO] [optimizer.py:267] Request req_072: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,714 [INFO] [main.py:106] >>> Processing Request req_073 for User usr_104 (Amount: 271.00 EUR)
+2026-09-13 19:01:11,717 [INFO] [optimizer.py:267] Request req_073: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,720 [INFO] [main.py:106] >>> Processing Request req_074 for User usr_105 (Amount: 298.00 GBP)
+2026-09-13 19:01:11,726 [INFO] [optimizer.py:267] Request req_074: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,729 [INFO] [main.py:106] >>> Processing Request req_075 for User usr_101 (Amount: 325.00 USD)
+2026-09-13 19:01:11,730 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,730 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,733 [INFO] [optimizer.py:267] Request req_075: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,736 [INFO] [main.py:106] >>> Processing Request req_076 for User usr_102 (Amount: 352.00 EUR)
+2026-09-13 19:01:11,739 [INFO] [optimizer.py:267] Request req_076: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,742 [INFO] [main.py:106] >>> Processing Request req_077 for User usr_103 (Amount: 379.00 GBP)
+2026-09-13 19:01:11,742 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:11,745 [INFO] [optimizer.py:267] Request req_077: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,888 [INFO] [main.py:106] >>> Processing Request req_078 for User usr_104 (Amount: 406.00 USD)
+2026-09-13 19:01:11,899 [INFO] [optimizer.py:267] Request req_078: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,911 [INFO] [main.py:106] >>> Processing Request req_079 for User usr_105 (Amount: 433.00 EUR)
+2026-09-13 19:01:11,922 [INFO] [optimizer.py:267] Request req_079: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,930 [INFO] [main.py:106] >>> Processing Request req_080 for User usr_101 (Amount: 460.00 GBP)
+2026-09-13 19:01:11,936 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,937 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:11,946 [INFO] [optimizer.py:267] Request req_080: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:11,956 [INFO] [main.py:106] >>> Processing Request req_081 for User usr_102 (Amount: 487.00 USD)
+2026-09-13 19:01:11,969 [INFO] [optimizer.py:267] Request req_081: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:11,975 [INFO] [main.py:106] >>> Processing Request req_082 for User usr_103 (Amount: 514.00 EUR)
+2026-09-13 19:01:11,976 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:12,009 [INFO] [optimizer.py:267] Request req_082: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,181 [INFO] [main.py:106] >>> Processing Request req_083 for User usr_104 (Amount: 541.00 GBP)
+2026-09-13 19:01:12,198 [INFO] [optimizer.py:267] Request req_083: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,206 [INFO] [main.py:106] >>> Processing Request req_084 for User usr_105 (Amount: 568.00 USD)
+2026-09-13 19:01:12,213 [INFO] [optimizer.py:267] Request req_084: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,220 [INFO] [main.py:106] >>> Processing Request req_085 for User usr_101 (Amount: 595.00 EUR)
+2026-09-13 19:01:12,222 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,223 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,231 [INFO] [optimizer.py:267] Request req_085: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,238 [INFO] [main.py:106] >>> Processing Request req_086 for User usr_102 (Amount: 622.00 GBP)
+2026-09-13 19:01:12,259 [INFO] [optimizer.py:267] Request req_086: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,304 [INFO] [main.py:106] >>> Processing Request req_087 for User usr_103 (Amount: 649.00 USD)
+2026-09-13 19:01:12,305 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:12,314 [INFO] [optimizer.py:267] Request req_087: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,451 [INFO] [main.py:106] >>> Processing Request req_088 for User usr_104 (Amount: 676.00 EUR)
+2026-09-13 19:01:12,458 [INFO] [optimizer.py:267] Request req_088: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,463 [INFO] [main.py:106] >>> Processing Request req_089 for User usr_105 (Amount: 703.00 GBP)
+2026-09-13 19:01:12,472 [INFO] [optimizer.py:267] Request req_089: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,479 [INFO] [main.py:106] >>> Processing Request req_090 for User usr_101 (Amount: 730.00 USD)
+2026-09-13 19:01:12,481 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,482 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,489 [INFO] [optimizer.py:267] Request req_090: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,495 [INFO] [main.py:106] >>> Processing Request req_091 for User usr_102 (Amount: 757.00 EUR)
+2026-09-13 19:01:12,508 [INFO] [optimizer.py:267] Request req_091: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,560 [INFO] [main.py:106] >>> Processing Request req_092 for User usr_103 (Amount: 784.00 GBP)
+2026-09-13 19:01:12,560 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:12,565 [INFO] [optimizer.py:267] Request req_092: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,826 [INFO] [main.py:106] >>> Processing Request req_093 for User usr_104 (Amount: 811.00 USD)
+2026-09-13 19:01:12,850 [INFO] [optimizer.py:267] Request req_093: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,864 [INFO] [main.py:106] >>> Processing Request req_094 for User usr_105 (Amount: 838.00 EUR)
+2026-09-13 19:01:12,877 [INFO] [optimizer.py:267] Request req_094: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,892 [INFO] [main.py:106] >>> Processing Request req_095 for User usr_101 (Amount: 865.00 GBP)
+2026-09-13 19:01:12,894 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,895 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:12,908 [INFO] [optimizer.py:267] Request req_095: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:12,916 [INFO] [main.py:106] >>> Processing Request req_096 for User usr_102 (Amount: 892.00 USD)
+2026-09-13 19:01:12,925 [INFO] [optimizer.py:267] Request req_096: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:12,969 [INFO] [main.py:106] >>> Processing Request req_097 for User usr_103 (Amount: 919.00 EUR)
+2026-09-13 19:01:12,970 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:12,978 [INFO] [optimizer.py:267] Request req_097: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:13,197 [INFO] [main.py:106] >>> Processing Request req_098 for User usr_104 (Amount: 946.00 GBP)
+2026-09-13 19:01:13,205 [INFO] [optimizer.py:267] Request req_098: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:13,212 [INFO] [main.py:106] >>> Processing Request req_099 for User usr_105 (Amount: 973.00 USD)
+2026-09-13 19:01:13,221 [INFO] [optimizer.py:267] Request req_099: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:13,228 [INFO] [main.py:106] >>> Processing Request req_100 for User usr_101 (Amount: 1000.00 EUR)
+2026-09-13 19:01:13,230 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:13,230 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:13,236 [INFO] [optimizer.py:267] Request req_100: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:13,243 [INFO] [main.py:106] >>> Processing Request req_101 for User usr_102 (Amount: 1027.00 GBP)
+2026-09-13 19:01:13,260 [INFO] [optimizer.py:267] Request req_101: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:13,432 [INFO] [main.py:106] >>> Processing Request req_102 for User usr_103 (Amount: 1054.00 USD)
+2026-09-13 19:01:13,433 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:13,447 [INFO] [optimizer.py:267] Request req_102: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:13,707 [INFO] [main.py:106] >>> Processing Request req_103 for User usr_104 (Amount: 1081.00 EUR)
+2026-09-13 19:01:13,725 [INFO] [optimizer.py:267] Request req_103: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:13,735 [INFO] [main.py:106] >>> Processing Request req_104 for User usr_105 (Amount: 1108.00 GBP)
+2026-09-13 19:01:13,744 [INFO] [optimizer.py:267] Request req_104: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:13,873 [INFO] [main.py:106] >>> Processing Request req_105 for User usr_101 (Amount: 1135.00 USD)
+2026-09-13 19:01:13,875 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:13,876 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:13,884 [INFO] [optimizer.py:267] Request req_105: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:13,891 [INFO] [main.py:106] >>> Processing Request req_106 for User usr_102 (Amount: 1162.00 EUR)
+2026-09-13 19:01:13,906 [INFO] [optimizer.py:267] Request req_106: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:14,036 [INFO] [main.py:106] >>> Processing Request req_107 for User usr_103 (Amount: 1189.00 GBP)
+2026-09-13 19:01:14,038 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:14,047 [INFO] [optimizer.py:267] Request req_107: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:14,197 [INFO] [main.py:106] >>> Processing Request req_108 for User usr_104 (Amount: 1216.00 USD)
+2026-09-13 19:01:14,204 [INFO] [optimizer.py:267] Request req_108: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:14,212 [INFO] [main.py:106] >>> Processing Request req_109 for User usr_105 (Amount: 1243.00 EUR)
+2026-09-13 19:01:14,229 [INFO] [optimizer.py:267] Request req_109: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:14,383 [INFO] [main.py:106] >>> Processing Request req_110 for User usr_101 (Amount: 1270.00 GBP)
+2026-09-13 19:01:14,389 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:14,391 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:14,406 [INFO] [optimizer.py:267] Request req_110: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:14,418 [INFO] [main.py:106] >>> Processing Request req_111 for User usr_102 (Amount: 1297.00 USD)
+2026-09-13 19:01:14,433 [INFO] [optimizer.py:267] Request req_111: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:14,586 [INFO] [main.py:106] >>> Processing Request req_112 for User usr_103 (Amount: 1324.00 EUR)
+2026-09-13 19:01:14,587 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:14,595 [INFO] [optimizer.py:267] Request req_112: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:14,798 [INFO] [main.py:106] >>> Processing Request req_113 for User usr_104 (Amount: 1351.00 GBP)
+2026-09-13 19:01:14,816 [INFO] [optimizer.py:267] Request req_113: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:14,826 [INFO] [main.py:106] >>> Processing Request req_114 for User usr_105 (Amount: 1378.00 USD)
+2026-09-13 19:01:14,857 [INFO] [optimizer.py:267] Request req_114: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,069 [INFO] [main.py:106] >>> Processing Request req_115 for User usr_101 (Amount: 1405.00 EUR)
+2026-09-13 19:01:15,072 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,073 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,084 [INFO] [optimizer.py:267] Request req_115: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,095 [INFO] [main.py:106] >>> Processing Request req_116 for User usr_102 (Amount: 1432.00 GBP)
+2026-09-13 19:01:15,102 [INFO] [optimizer.py:267] Request req_116: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,280 [INFO] [main.py:106] >>> Processing Request req_117 for User usr_103 (Amount: 1459.00 USD)
+2026-09-13 19:01:15,281 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:15,295 [INFO] [optimizer.py:267] Request req_117: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,414 [INFO] [main.py:106] >>> Processing Request req_118 for User usr_104 (Amount: 1486.00 EUR)
+2026-09-13 19:01:15,423 [INFO] [optimizer.py:267] Request req_118: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,429 [INFO] [main.py:106] >>> Processing Request req_119 for User usr_105 (Amount: 1513.00 GBP)
+2026-09-13 19:01:15,439 [INFO] [optimizer.py:267] Request req_119: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,571 [INFO] [main.py:106] >>> Processing Request req_120 for User usr_101 (Amount: 1540.00 USD)
+2026-09-13 19:01:15,573 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,574 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,579 [INFO] [optimizer.py:267] Request req_120: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,584 [INFO] [main.py:106] >>> Processing Request req_121 for User usr_102 (Amount: 1567.00 EUR)
+2026-09-13 19:01:15,597 [INFO] [optimizer.py:267] Request req_121: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,694 [INFO] [main.py:106] >>> Processing Request req_122 for User usr_103 (Amount: 1594.00 GBP)
+2026-09-13 19:01:15,695 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:15,702 [INFO] [optimizer.py:267] Request req_122: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,800 [INFO] [main.py:106] >>> Processing Request req_123 for User usr_104 (Amount: 1621.00 USD)
+2026-09-13 19:01:15,807 [INFO] [optimizer.py:267] Request req_123: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,812 [INFO] [main.py:106] >>> Processing Request req_124 for User usr_105 (Amount: 1648.00 EUR)
+2026-09-13 19:01:15,816 [INFO] [optimizer.py:267] Request req_124: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:15,970 [INFO] [main.py:106] >>> Processing Request req_125 for User usr_101 (Amount: 1675.00 GBP)
+2026-09-13 19:01:15,972 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,972 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:15,981 [INFO] [optimizer.py:267] Request req_125: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:15,997 [INFO] [main.py:106] >>> Processing Request req_126 for User usr_102 (Amount: 1702.00 USD)
+2026-09-13 19:01:16,038 [INFO] [optimizer.py:267] Request req_126: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:16,193 [INFO] [main.py:106] >>> Processing Request req_127 for User usr_103 (Amount: 1729.00 EUR)
+2026-09-13 19:01:16,194 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:16,205 [INFO] [optimizer.py:267] Request req_127: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,383 [INFO] [main.py:106] >>> Processing Request req_128 for User usr_104 (Amount: 1756.00 GBP)
+2026-09-13 19:01:16,412 [INFO] [optimizer.py:267] Request req_128: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,422 [INFO] [main.py:106] >>> Processing Request req_129 for User usr_105 (Amount: 1783.00 USD)
+2026-09-13 19:01:16,432 [INFO] [optimizer.py:267] Request req_129: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,579 [INFO] [main.py:106] >>> Processing Request req_130 for User usr_101 (Amount: 1810.00 EUR)
+2026-09-13 19:01:16,580 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:16,581 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:16,586 [INFO] [optimizer.py:267] Request req_130: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:16,592 [INFO] [main.py:106] >>> Processing Request req_131 for User usr_102 (Amount: 1837.00 GBP)
+2026-09-13 19:01:16,619 [INFO] [optimizer.py:267] Request req_131: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,748 [INFO] [main.py:106] >>> Processing Request req_132 for User usr_103 (Amount: 1864.00 USD)
+2026-09-13 19:01:16,748 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:16,837 [INFO] [optimizer.py:267] Request req_132: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,922 [INFO] [main.py:106] >>> Processing Request req_133 for User usr_104 (Amount: 1891.00 EUR)
+2026-09-13 19:01:16,929 [INFO] [optimizer.py:267] Request req_133: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:16,934 [INFO] [main.py:106] >>> Processing Request req_134 for User usr_105 (Amount: 118.00 GBP)
+2026-09-13 19:01:16,940 [INFO] [optimizer.py:267] Request req_134: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:16,943 [INFO] [main.py:106] >>> Processing Request req_135 for User usr_101 (Amount: 145.00 USD)
+2026-09-13 19:01:16,944 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:16,947 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:16,961 [INFO] [optimizer.py:267] Request req_135: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:16,968 [INFO] [main.py:106] >>> Processing Request req_136 for User usr_102 (Amount: 172.00 EUR)
+2026-09-13 19:01:16,974 [INFO] [optimizer.py:267] Request req_136: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:16,980 [INFO] [main.py:106] >>> Processing Request req_137 for User usr_103 (Amount: 199.00 GBP)
+2026-09-13 19:01:16,981 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:16,990 [INFO] [optimizer.py:267] Request req_137: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,094 [INFO] [main.py:106] >>> Processing Request req_138 for User usr_104 (Amount: 226.00 USD)
+2026-09-13 19:01:17,102 [INFO] [optimizer.py:267] Request req_138: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,106 [INFO] [main.py:106] >>> Processing Request req_139 for User usr_105 (Amount: 253.00 EUR)
+2026-09-13 19:01:17,113 [INFO] [optimizer.py:267] Request req_139: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,117 [INFO] [main.py:106] >>> Processing Request req_140 for User usr_101 (Amount: 280.00 GBP)
+2026-09-13 19:01:17,118 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,118 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,123 [INFO] [optimizer.py:267] Request req_140: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,126 [INFO] [main.py:106] >>> Processing Request req_141 for User usr_102 (Amount: 307.00 USD)
+2026-09-13 19:01:17,136 [INFO] [optimizer.py:267] Request req_141: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,146 [INFO] [main.py:106] >>> Processing Request req_142 for User usr_103 (Amount: 334.00 EUR)
+2026-09-13 19:01:17,147 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:17,153 [INFO] [optimizer.py:267] Request req_142: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,333 [INFO] [main.py:106] >>> Processing Request req_143 for User usr_104 (Amount: 361.00 GBP)
+2026-09-13 19:01:17,359 [INFO] [optimizer.py:267] Request req_143: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,366 [INFO] [main.py:106] >>> Processing Request req_144 for User usr_105 (Amount: 388.00 USD)
+2026-09-13 19:01:17,373 [INFO] [optimizer.py:267] Request req_144: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,377 [INFO] [main.py:106] >>> Processing Request req_145 for User usr_101 (Amount: 415.00 EUR)
+2026-09-13 19:01:17,379 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,379 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,387 [INFO] [optimizer.py:267] Request req_145: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,392 [INFO] [main.py:106] >>> Processing Request req_146 for User usr_102 (Amount: 442.00 GBP)
+2026-09-13 19:01:17,409 [INFO] [optimizer.py:267] Request req_146: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,451 [INFO] [main.py:106] >>> Processing Request req_147 for User usr_103 (Amount: 469.00 USD)
+2026-09-13 19:01:17,451 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:17,464 [INFO] [optimizer.py:267] Request req_147: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,589 [INFO] [main.py:106] >>> Processing Request req_148 for User usr_104 (Amount: 496.00 EUR)
+2026-09-13 19:01:17,594 [INFO] [optimizer.py:267] Request req_148: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,599 [INFO] [main.py:106] >>> Processing Request req_149 for User usr_105 (Amount: 523.00 GBP)
+2026-09-13 19:01:17,607 [INFO] [optimizer.py:267] Request req_149: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,613 [INFO] [main.py:106] >>> Processing Request req_150 for User usr_101 (Amount: 550.00 USD)
+2026-09-13 19:01:17,615 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,615 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,624 [INFO] [optimizer.py:267] Request req_150: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,628 [INFO] [main.py:106] >>> Processing Request req_151 for User usr_102 (Amount: 577.00 EUR)
+2026-09-13 19:01:17,634 [INFO] [optimizer.py:267] Request req_151: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,709 [INFO] [main.py:106] >>> Processing Request req_152 for User usr_103 (Amount: 604.00 GBP)
+2026-09-13 19:01:17,710 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:17,722 [INFO] [optimizer.py:267] Request req_152: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,851 [INFO] [main.py:106] >>> Processing Request req_153 for User usr_104 (Amount: 631.00 USD)
+2026-09-13 19:01:17,870 [INFO] [optimizer.py:267] Request req_153: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,887 [INFO] [main.py:106] >>> Processing Request req_154 for User usr_105 (Amount: 658.00 EUR)
+2026-09-13 19:01:17,897 [INFO] [optimizer.py:267] Request req_154: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,910 [INFO] [main.py:106] >>> Processing Request req_155 for User usr_101 (Amount: 685.00 GBP)
+2026-09-13 19:01:17,911 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,912 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:17,918 [INFO] [optimizer.py:267] Request req_155: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:17,931 [INFO] [main.py:106] >>> Processing Request req_156 for User usr_102 (Amount: 712.00 USD)
+2026-09-13 19:01:17,940 [INFO] [optimizer.py:267] Request req_156: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:17,975 [INFO] [main.py:106] >>> Processing Request req_157 for User usr_103 (Amount: 739.00 EUR)
+2026-09-13 19:01:17,976 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:17,982 [INFO] [optimizer.py:267] Request req_157: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,107 [INFO] [main.py:106] >>> Processing Request req_158 for User usr_104 (Amount: 766.00 GBP)
+2026-09-13 19:01:18,116 [INFO] [optimizer.py:267] Request req_158: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,124 [INFO] [main.py:106] >>> Processing Request req_159 for User usr_105 (Amount: 793.00 USD)
+2026-09-13 19:01:18,131 [INFO] [optimizer.py:267] Request req_159: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,137 [INFO] [main.py:106] >>> Processing Request req_160 for User usr_101 (Amount: 820.00 EUR)
+2026-09-13 19:01:18,139 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,140 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,145 [INFO] [optimizer.py:267] Request req_160: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,152 [INFO] [main.py:106] >>> Processing Request req_161 for User usr_102 (Amount: 847.00 GBP)
+2026-09-13 19:01:18,167 [INFO] [optimizer.py:267] Request req_161: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,209 [INFO] [main.py:106] >>> Processing Request req_162 for User usr_103 (Amount: 874.00 USD)
+2026-09-13 19:01:18,210 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:18,228 [INFO] [optimizer.py:267] Request req_162: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,384 [INFO] [main.py:106] >>> Processing Request req_163 for User usr_104 (Amount: 901.00 EUR)
+2026-09-13 19:01:18,393 [INFO] [optimizer.py:267] Request req_163: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,400 [INFO] [main.py:106] >>> Processing Request req_164 for User usr_105 (Amount: 928.00 GBP)
+2026-09-13 19:01:18,412 [INFO] [optimizer.py:267] Request req_164: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,488 [INFO] [main.py:106] >>> Processing Request req_165 for User usr_101 (Amount: 955.00 USD)
+2026-09-13 19:01:18,501 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,504 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,570 [INFO] [optimizer.py:267] Request req_165: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,632 [INFO] [main.py:106] >>> Processing Request req_166 for User usr_102 (Amount: 982.00 EUR)
+2026-09-13 19:01:18,676 [INFO] [optimizer.py:267] Request req_166: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,769 [INFO] [main.py:106] >>> Processing Request req_167 for User usr_103 (Amount: 1009.00 GBP)
+2026-09-13 19:01:18,772 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:18,781 [INFO] [optimizer.py:267] Request req_167: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,889 [INFO] [main.py:106] >>> Processing Request req_168 for User usr_104 (Amount: 1036.00 USD)
+2026-09-13 19:01:18,893 [INFO] [optimizer.py:267] Request req_168: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,896 [INFO] [main.py:106] >>> Processing Request req_169 for User usr_105 (Amount: 1063.00 EUR)
+2026-09-13 19:01:18,907 [INFO] [optimizer.py:267] Request req_169: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:18,935 [INFO] [main.py:106] >>> Processing Request req_170 for User usr_101 (Amount: 1090.00 GBP)
+2026-09-13 19:01:18,939 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,939 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:18,946 [INFO] [optimizer.py:267] Request req_170: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,952 [INFO] [main.py:106] >>> Processing Request req_171 for User usr_102 (Amount: 1117.00 USD)
+2026-09-13 19:01:18,959 [INFO] [optimizer.py:267] Request req_171: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:18,990 [INFO] [main.py:106] >>> Processing Request req_172 for User usr_103 (Amount: 1144.00 EUR)
+2026-09-13 19:01:18,991 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:18,996 [INFO] [optimizer.py:267] Request req_172: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,094 [INFO] [main.py:106] >>> Processing Request req_173 for User usr_104 (Amount: 1171.00 GBP)
+2026-09-13 19:01:19,101 [INFO] [optimizer.py:267] Request req_173: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,108 [INFO] [main.py:106] >>> Processing Request req_174 for User usr_105 (Amount: 1198.00 USD)
+2026-09-13 19:01:19,115 [INFO] [optimizer.py:267] Request req_174: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,141 [INFO] [main.py:106] >>> Processing Request req_175 for User usr_101 (Amount: 1225.00 EUR)
+2026-09-13 19:01:19,143 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,143 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,149 [INFO] [optimizer.py:267] Request req_175: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,156 [INFO] [main.py:106] >>> Processing Request req_176 for User usr_102 (Amount: 1252.00 GBP)
+2026-09-13 19:01:19,162 [INFO] [optimizer.py:267] Request req_176: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,255 [INFO] [main.py:106] >>> Processing Request req_177 for User usr_103 (Amount: 1279.00 USD)
+2026-09-13 19:01:19,256 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:19,266 [INFO] [optimizer.py:267] Request req_177: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,411 [INFO] [main.py:106] >>> Processing Request req_178 for User usr_104 (Amount: 1306.00 EUR)
+2026-09-13 19:01:19,418 [INFO] [optimizer.py:267] Request req_178: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,426 [INFO] [main.py:106] >>> Processing Request req_179 for User usr_105 (Amount: 1333.00 GBP)
+2026-09-13 19:01:19,439 [INFO] [optimizer.py:267] Request req_179: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,576 [INFO] [main.py:106] >>> Processing Request req_180 for User usr_101 (Amount: 1360.00 USD)
+2026-09-13 19:01:19,577 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,577 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,579 [INFO] [optimizer.py:267] Request req_180: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,581 [INFO] [main.py:106] >>> Processing Request req_181 for User usr_102 (Amount: 1387.00 EUR)
+2026-09-13 19:01:19,585 [INFO] [optimizer.py:267] Request req_181: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,687 [INFO] [main.py:106] >>> Processing Request req_182 for User usr_103 (Amount: 1414.00 GBP)
+2026-09-13 19:01:19,687 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:19,691 [INFO] [optimizer.py:267] Request req_182: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,777 [INFO] [main.py:106] >>> Processing Request req_183 for User usr_104 (Amount: 1441.00 USD)
+2026-09-13 19:01:19,789 [INFO] [optimizer.py:267] Request req_183: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,795 [INFO] [main.py:106] >>> Processing Request req_184 for User usr_105 (Amount: 1468.00 EUR)
+2026-09-13 19:01:19,800 [INFO] [optimizer.py:267] Request req_184: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:19,946 [INFO] [main.py:106] >>> Processing Request req_185 for User usr_101 (Amount: 1495.00 GBP)
+2026-09-13 19:01:19,948 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,949 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:19,958 [INFO] [optimizer.py:267] Request req_185: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:19,964 [INFO] [main.py:106] >>> Processing Request req_186 for User usr_102 (Amount: 1522.00 USD)
+2026-09-13 19:01:19,975 [INFO] [optimizer.py:267] Request req_186: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:20,075 [INFO] [main.py:106] >>> Processing Request req_187 for User usr_103 (Amount: 1549.00 EUR)
+2026-09-13 19:01:20,075 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:20,080 [INFO] [optimizer.py:267] Request req_187: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,248 [INFO] [main.py:106] >>> Processing Request req_188 for User usr_104 (Amount: 1576.00 GBP)
+2026-09-13 19:01:20,265 [INFO] [optimizer.py:267] Request req_188: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,276 [INFO] [main.py:106] >>> Processing Request req_189 for User usr_105 (Amount: 1603.00 USD)
+2026-09-13 19:01:20,292 [INFO] [optimizer.py:267] Request req_189: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,448 [INFO] [main.py:106] >>> Processing Request req_190 for User usr_101 (Amount: 1630.00 EUR)
+2026-09-13 19:01:20,450 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:20,450 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:20,461 [INFO] [optimizer.py:267] Request req_190: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:20,466 [INFO] [main.py:106] >>> Processing Request req_191 for User usr_102 (Amount: 1657.00 GBP)
+2026-09-13 19:01:20,476 [INFO] [optimizer.py:267] Request req_191: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,631 [INFO] [main.py:106] >>> Processing Request req_192 for User usr_103 (Amount: 1684.00 USD)
+2026-09-13 19:01:20,632 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:20,639 [INFO] [optimizer.py:267] Request req_192: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,749 [INFO] [main.py:106] >>> Processing Request req_193 for User usr_104 (Amount: 1711.00 EUR)
+2026-09-13 19:01:20,763 [INFO] [optimizer.py:267] Request req_193: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:20,771 [INFO] [main.py:106] >>> Processing Request req_194 for User usr_105 (Amount: 1738.00 GBP)
+2026-09-13 19:01:20,787 [INFO] [optimizer.py:267] Request req_194: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,899 [INFO] [main.py:106] >>> Processing Request req_195 for User usr_101 (Amount: 1765.00 USD)
+2026-09-13 19:01:20,900 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:20,900 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:20,905 [INFO] [optimizer.py:267] Request req_195: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:20,908 [INFO] [main.py:106] >>> Processing Request req_196 for User usr_102 (Amount: 1792.00 EUR)
+2026-09-13 19:01:20,912 [INFO] [optimizer.py:267] Request req_196: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:20,998 [INFO] [main.py:106] >>> Processing Request req_197 for User usr_103 (Amount: 1819.00 GBP)
+2026-09-13 19:01:20,999 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:21,009 [INFO] [optimizer.py:267] Request req_197: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,127 [INFO] [main.py:106] >>> Processing Request req_198 for User usr_104 (Amount: 1846.00 USD)
+2026-09-13 19:01:21,131 [INFO] [optimizer.py:267] Request req_198: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,134 [INFO] [main.py:106] >>> Processing Request req_199 for User usr_105 (Amount: 1873.00 EUR)
+2026-09-13 19:01:21,140 [INFO] [optimizer.py:267] Request req_199: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,221 [INFO] [main.py:106] >>> Processing Request req_200 for User usr_101 (Amount: 100.00 GBP)
+2026-09-13 19:01:21,222 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,223 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,226 [INFO] [optimizer.py:267] Request req_200: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,228 [INFO] [main.py:106] >>> Processing Request req_201 for User usr_102 (Amount: 127.00 USD)
+2026-09-13 19:01:21,232 [INFO] [optimizer.py:267] Request req_201: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,237 [INFO] [main.py:106] >>> Processing Request req_202 for User usr_103 (Amount: 154.00 EUR)
+2026-09-13 19:01:21,238 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:21,241 [INFO] [optimizer.py:267] Request req_202: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,297 [INFO] [main.py:106] >>> Processing Request req_203 for User usr_104 (Amount: 181.00 GBP)
+2026-09-13 19:01:21,300 [INFO] [optimizer.py:267] Request req_203: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,305 [INFO] [main.py:106] >>> Processing Request req_204 for User usr_105 (Amount: 208.00 USD)
+2026-09-13 19:01:21,307 [INFO] [optimizer.py:267] Request req_204: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,310 [INFO] [main.py:106] >>> Processing Request req_205 for User usr_101 (Amount: 235.00 EUR)
+2026-09-13 19:01:21,311 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,311 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,314 [INFO] [optimizer.py:267] Request req_205: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,316 [INFO] [main.py:106] >>> Processing Request req_206 for User usr_102 (Amount: 262.00 GBP)
+2026-09-13 19:01:21,322 [INFO] [optimizer.py:267] Request req_206: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,325 [INFO] [main.py:106] >>> Processing Request req_207 for User usr_103 (Amount: 289.00 USD)
+2026-09-13 19:01:21,325 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:21,329 [INFO] [optimizer.py:267] Request req_207: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,400 [INFO] [main.py:106] >>> Processing Request req_208 for User usr_104 (Amount: 316.00 EUR)
+2026-09-13 19:01:21,404 [INFO] [optimizer.py:267] Request req_208: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,409 [INFO] [main.py:106] >>> Processing Request req_209 for User usr_105 (Amount: 343.00 GBP)
+2026-09-13 19:01:21,417 [INFO] [optimizer.py:267] Request req_209: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,428 [INFO] [main.py:106] >>> Processing Request req_210 for User usr_101 (Amount: 370.00 USD)
+2026-09-13 19:01:21,429 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,429 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,435 [INFO] [optimizer.py:267] Request req_210: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,445 [INFO] [main.py:106] >>> Processing Request req_211 for User usr_102 (Amount: 397.00 EUR)
+2026-09-13 19:01:21,449 [INFO] [optimizer.py:267] Request req_211: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,454 [INFO] [main.py:106] >>> Processing Request req_212 for User usr_103 (Amount: 424.00 GBP)
+2026-09-13 19:01:21,455 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:21,458 [INFO] [optimizer.py:267] Request req_212: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,733 [INFO] [main.py:106] >>> Processing Request req_213 for User usr_104 (Amount: 451.00 USD)
+2026-09-13 19:01:21,740 [INFO] [optimizer.py:267] Request req_213: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,746 [INFO] [main.py:106] >>> Processing Request req_214 for User usr_105 (Amount: 478.00 EUR)
+2026-09-13 19:01:21,763 [INFO] [optimizer.py:267] Request req_214: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,768 [INFO] [main.py:106] >>> Processing Request req_215 for User usr_101 (Amount: 505.00 GBP)
+2026-09-13 19:01:21,780 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,781 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:21,810 [INFO] [optimizer.py:267] Request req_215: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:21,812 [INFO] [main.py:106] >>> Processing Request req_216 for User usr_102 (Amount: 532.00 USD)
+2026-09-13 19:01:21,824 [INFO] [optimizer.py:267] Request req_216: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:21,894 [INFO] [main.py:106] >>> Processing Request req_217 for User usr_103 (Amount: 559.00 EUR)
+2026-09-13 19:01:21,897 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:21,908 [INFO] [optimizer.py:267] Request req_217: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,011 [INFO] [main.py:106] >>> Processing Request req_218 for User usr_104 (Amount: 586.00 GBP)
+2026-09-13 19:01:22,019 [INFO] [optimizer.py:267] Request req_218: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,028 [INFO] [main.py:106] >>> Processing Request req_219 for User usr_105 (Amount: 613.00 USD)
+2026-09-13 19:01:22,033 [INFO] [optimizer.py:267] Request req_219: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,041 [INFO] [main.py:106] >>> Processing Request req_220 for User usr_101 (Amount: 640.00 EUR)
+2026-09-13 19:01:22,043 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,043 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,048 [INFO] [optimizer.py:267] Request req_220: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,055 [INFO] [main.py:106] >>> Processing Request req_221 for User usr_102 (Amount: 667.00 GBP)
+2026-09-13 19:01:22,070 [INFO] [optimizer.py:267] Request req_221: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,113 [INFO] [main.py:106] >>> Processing Request req_222 for User usr_103 (Amount: 694.00 USD)
+2026-09-13 19:01:22,113 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:22,121 [INFO] [optimizer.py:267] Request req_222: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,241 [INFO] [main.py:106] >>> Processing Request req_223 for User usr_104 (Amount: 721.00 EUR)
+2026-09-13 19:01:22,248 [INFO] [optimizer.py:267] Request req_223: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,251 [INFO] [main.py:106] >>> Processing Request req_224 for User usr_105 (Amount: 748.00 GBP)
+2026-09-13 19:01:22,254 [INFO] [optimizer.py:267] Request req_224: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,262 [INFO] [main.py:106] >>> Processing Request req_225 for User usr_101 (Amount: 775.00 USD)
+2026-09-13 19:01:22,264 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,265 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,272 [INFO] [optimizer.py:267] Request req_225: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,280 [INFO] [main.py:106] >>> Processing Request req_226 for User usr_102 (Amount: 802.00 EUR)
+2026-09-13 19:01:22,295 [INFO] [optimizer.py:267] Request req_226: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,339 [INFO] [main.py:106] >>> Processing Request req_227 for User usr_103 (Amount: 829.00 GBP)
+2026-09-13 19:01:22,340 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:22,347 [INFO] [optimizer.py:267] Request req_227: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,467 [INFO] [main.py:106] >>> Processing Request req_228 for User usr_104 (Amount: 856.00 USD)
+2026-09-13 19:01:22,471 [INFO] [optimizer.py:267] Request req_228: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,477 [INFO] [main.py:106] >>> Processing Request req_229 for User usr_105 (Amount: 883.00 EUR)
+2026-09-13 19:01:22,486 [INFO] [optimizer.py:267] Request req_229: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,493 [INFO] [main.py:106] >>> Processing Request req_230 for User usr_101 (Amount: 910.00 GBP)
+2026-09-13 19:01:22,494 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,494 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,499 [INFO] [optimizer.py:267] Request req_230: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,504 [INFO] [main.py:106] >>> Processing Request req_231 for User usr_102 (Amount: 937.00 USD)
+2026-09-13 19:01:22,515 [INFO] [optimizer.py:267] Request req_231: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,550 [INFO] [main.py:106] >>> Processing Request req_232 for User usr_103 (Amount: 964.00 EUR)
+2026-09-13 19:01:22,551 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:22,560 [INFO] [optimizer.py:267] Request req_232: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,682 [INFO] [main.py:106] >>> Processing Request req_233 for User usr_104 (Amount: 991.00 GBP)
+2026-09-13 19:01:22,690 [INFO] [optimizer.py:267] Request req_233: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,697 [INFO] [main.py:106] >>> Processing Request req_234 for User usr_105 (Amount: 1018.00 USD)
+2026-09-13 19:01:22,701 [INFO] [optimizer.py:267] Request req_234: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,709 [INFO] [main.py:106] >>> Processing Request req_235 for User usr_101 (Amount: 1045.00 EUR)
+2026-09-13 19:01:22,711 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,711 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:22,717 [INFO] [optimizer.py:267] Request req_235: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,724 [INFO] [main.py:106] >>> Processing Request req_236 for User usr_102 (Amount: 1072.00 GBP)
+2026-09-13 19:01:22,732 [INFO] [optimizer.py:267] Request req_236: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,847 [INFO] [main.py:106] >>> Processing Request req_237 for User usr_103 (Amount: 1099.00 USD)
+2026-09-13 19:01:22,848 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:22,856 [INFO] [optimizer.py:267] Request req_237: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:22,971 [INFO] [main.py:106] >>> Processing Request req_238 for User usr_104 (Amount: 1126.00 EUR)
+2026-09-13 19:01:22,981 [INFO] [optimizer.py:267] Request req_238: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:22,992 [INFO] [main.py:106] >>> Processing Request req_239 for User usr_105 (Amount: 1153.00 GBP)
+2026-09-13 19:01:23,018 [INFO] [optimizer.py:267] Request req_239: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:23,358 [INFO] [main.py:106] >>> Processing Request req_240 for User usr_101 (Amount: 1180.00 USD)
+2026-09-13 19:01:23,366 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:23,367 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:23,385 [INFO] [optimizer.py:267] Request req_240: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:23,401 [INFO] [main.py:106] >>> Processing Request req_241 for User usr_102 (Amount: 1207.00 EUR)
+2026-09-13 19:01:23,478 [INFO] [optimizer.py:267] Request req_241: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:23,683 [INFO] [main.py:106] >>> Processing Request req_242 for User usr_103 (Amount: 1234.00 GBP)
+2026-09-13 19:01:23,684 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:23,690 [INFO] [optimizer.py:267] Request req_242: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:23,830 [INFO] [main.py:106] >>> Processing Request req_243 for User usr_104 (Amount: 1261.00 USD)
+2026-09-13 19:01:23,837 [INFO] [optimizer.py:267] Request req_243: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:23,845 [INFO] [main.py:106] >>> Processing Request req_244 for User usr_105 (Amount: 1288.00 EUR)
+2026-09-13 19:01:23,848 [INFO] [optimizer.py:267] Request req_244: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:23,945 [INFO] [main.py:106] >>> Processing Request req_245 for User usr_101 (Amount: 1315.00 GBP)
+2026-09-13 19:01:23,946 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:23,947 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:23,957 [INFO] [optimizer.py:267] Request req_245: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:23,965 [INFO] [main.py:106] >>> Processing Request req_246 for User usr_102 (Amount: 1342.00 USD)
+2026-09-13 19:01:23,983 [INFO] [optimizer.py:267] Request req_246: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:24,075 [INFO] [main.py:106] >>> Processing Request req_247 for User usr_103 (Amount: 1369.00 EUR)
+2026-09-13 19:01:24,076 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:01:24,081 [INFO] [optimizer.py:267] Request req_247: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:24,292 [INFO] [main.py:106] >>> Processing Request req_248 for User usr_104 (Amount: 1396.00 GBP)
+2026-09-13 19:01:24,306 [INFO] [optimizer.py:267] Request req_248: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:01:24,315 [INFO] [main.py:106] >>> Processing Request req_249 for User usr_105 (Amount: 1423.00 USD)
+2026-09-13 19:01:24,334 [INFO] [optimizer.py:267] Request req_249: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:24,495 [INFO] [main.py:106] >>> Processing Request req_250 for User usr_101 (Amount: 1450.00 EUR)
+2026-09-13 19:01:24,496 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:24,496 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:01:24,502 [INFO] [optimizer.py:267] Request req_250: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:01:24,674 [INFO] [main.py:307] =====================================================
+2026-09-13 19:01:24,675 [INFO] [main.py:308] Execution Summary:
+2026-09-13 19:01:24,675 [INFO] [main.py:316]   number_of_requests: 250
+2026-09-13 19:01:24,675 [INFO] [main.py:316]   number_successfully_processed: 250
+2026-09-13 19:01:24,675 [INFO] [main.py:316]   number_of_validation_failures: 0
+2026-09-13 19:01:24,675 [INFO] [main.py:316]   final_audit: {'total_requests': 250, 'rows_written': 250, 'duplicate_request_ids': [], 'missing_request_ids': [], 'invalid_statuses': 0, 'invalid_payment_methods': 0, 'malformed_plans': 0, 'arithmetic_failures': 0, 'safety_failures': 0, 'header_failure': 0, 'row_count_failure': 0, 'total_failures': 0}
+2026-09-13 19:01:24,675 [INFO] [main.py:311]   Validation Statistics:
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - total_validated: 250
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - passed_first_pass: 250
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - repaired_count: 0
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - fallen_back_count: 0
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - final_valid: 250
+2026-09-13 19:01:24,675 [INFO] [main.py:314]     - initial_failure_rate_pct: 0.0
+2026-09-13 19:01:24,676 [INFO] [main.py:314]     - final_success_rate_pct: 100.0
+2026-09-13 19:01:24,676 [INFO] [main.py:314]     - violations_detected_by_rule: {}
+2026-09-13 19:01:24,676 [INFO] [main.py:314]     - number_of_repairs: 0
+2026-09-13 19:01:24,676 [INFO] [main.py:314]     - number_of_fallbacks: 0
+2026-09-13 19:01:24,676 [INFO] [main.py:314]     - final_audit: {'total_requests': 250, 'rows_written': 250, 'duplicate_request_ids': [], 'missing_request_ids': [], 'invalid_statuses': 0, 'invalid_payment_methods': 0, 'malformed_plans': 0, 'arithmetic_failures': 0, 'safety_failures': 0, 'header_failure': 0, 'row_count_failure': 0, 'total_failures': 0}
+2026-09-13 19:01:24,676 [INFO] [main.py:316]   requests_requiring_image_extraction: 150
+2026-09-13 19:01:24,676 [INFO] [main.py:316]   requests_requiring_message_interpretation: 100
+2026-09-13 19:01:24,676 [INFO] [main.py:316]   runtime_seconds: 15.483
+2026-09-13 19:01:24,679 [INFO] [main.py:316]   gemini_calls: 0
+2026-09-13 19:01:24,679 [INFO] [main.py:316]   token_usage: {'input_tokens': 0, 'output_tokens': 0, 'total_tokens': 0}
+2026-09-13 19:01:24,679 [INFO] [main.py:316]   estimated_cost_usd: 0.0
+2026-09-13 19:01:24,680 [INFO] [main.py:316]   average_cost_per_request_usd: 0.0
+2026-09-13 19:01:24,681 [INFO] [main.py:317] Output saved to: output.csv
+2026-09-13 19:01:24,681 [INFO] [main.py:318] Optimizer output saved to: output_optimizer.csv
+2026-09-13 19:01:24,682 [INFO] [main.py:319] Validation statistics saved to: validation_statistics.json
+2026-09-13 19:01:24,682 [INFO] [main.py:320] =====================================================
+2026-09-13 19:02:36,749 [INFO] [optimizer.py:267] Request req_x: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:03:02,717 [INFO] [optimizer.py:267] Request req_x: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:09,166 [INFO] [main.py:38] =====================================================
+2026-09-13 19:04:09,168 [INFO] [main.py:39] Starting Buy or Wait Financial Reasoning Engine
+2026-09-13 19:04:09,169 [INFO] [main.py:40] Dataset dir: dataset
+2026-09-13 19:04:09,170 [INFO] [main.py:41] Output path: .audit_tmp\sample_output.csv
+2026-09-13 19:04:09,171 [INFO] [main.py:42] =====================================================
+2026-09-13 19:04:09,379 [INFO] [data_loader.py:83] Loaded 5 user profiles.
+2026-09-13 19:04:09,403 [INFO] [data_loader.py:116] Loaded 11 events.
+2026-09-13 19:04:09,405 [INFO] [data_loader.py:133] Loaded 2 messages.
+2026-09-13 19:04:09,408 [INFO] [data_loader.py:150] Loaded 3 image records.
+2026-09-13 19:04:09,410 [INFO] [data_loader.py:178] Loaded payment options for 5 requests.
+2026-09-13 19:04:09,413 [INFO] [data_loader.py:193] Loaded 6 exchange rates.
+2026-09-13 19:04:09,828 [INFO] [data_loader.py:223] Loaded 25 purchase requests from sample_requests.csv.
+2026-09-13 19:04:10,287 [INFO] [main.py:106] >>> Processing Request s_req_001 for User usr_102 (Amount: 235.00 USD)
+2026-09-13 19:04:10,290 [INFO] [conflict_resolver.py:60] [RESOLVED BLANK AMOUNT] Event ev_102_rent (rent) blank amount resolved to 850.00 EUR from verified Image img_rent_02 (confidence: 0.9)
+2026-09-13 19:04:10,304 [INFO] [optimizer.py:267] Request s_req_001: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,313 [INFO] [main.py:106] >>> Processing Request s_req_002 for User usr_103 (Amount: 320.00 USD)
+2026-09-13 19:04:10,314 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1200.00 -> 1400 per message msg_002
+2026-09-13 19:04:10,326 [INFO] [optimizer.py:267] Request s_req_002: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:10,489 [INFO] [main.py:106] >>> Processing Request s_req_003 for User usr_104 (Amount: 405.00 USD)
+2026-09-13 19:04:10,502 [INFO] [optimizer.py:267] Request s_req_003: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,511 [INFO] [main.py:106] >>> Processing Request s_req_004 for User usr_105 (Amount: 490.00 USD)
+2026-09-13 19:04:10,530 [INFO] [optimizer.py:267] Request s_req_004: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,540 [INFO] [main.py:106] >>> Processing Request s_req_005 for User usr_101 (Amount: 575.00 USD)
+2026-09-13 19:04:10,543 [INFO] [conflict_resolver.py:60] [RESOLVED BLANK AMOUNT] Event ev_101_util (utilities) blank amount resolved to 165.50 USD from verified Image img_util_01 (confidence: 0.9)
+2026-09-13 19:04:10,545 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:10,547 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:10,560 [INFO] [optimizer.py:267] Request s_req_005: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,567 [INFO] [main.py:106] >>> Processing Request s_req_006 for User usr_102 (Amount: 660.00 USD)
+2026-09-13 19:04:10,580 [INFO] [optimizer.py:267] Request s_req_006: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,635 [INFO] [main.py:106] >>> Processing Request s_req_007 for User usr_103 (Amount: 745.00 USD)
+2026-09-13 19:04:10,638 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:04:10,647 [INFO] [optimizer.py:267] Request s_req_007: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:10,819 [INFO] [main.py:106] >>> Processing Request s_req_008 for User usr_104 (Amount: 830.00 USD)
+2026-09-13 19:04:10,832 [INFO] [optimizer.py:267] Request s_req_008: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,846 [INFO] [main.py:106] >>> Processing Request s_req_009 for User usr_105 (Amount: 915.00 USD)
+2026-09-13 19:04:10,856 [INFO] [optimizer.py:267] Request s_req_009: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,864 [INFO] [main.py:106] >>> Processing Request s_req_010 for User usr_101 (Amount: 1000.00 USD)
+2026-09-13 19:04:10,866 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:10,867 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:10,878 [INFO] [optimizer.py:267] Request s_req_010: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:10,886 [INFO] [main.py:106] >>> Processing Request s_req_011 for User usr_102 (Amount: 1085.00 USD)
+2026-09-13 19:04:10,899 [INFO] [optimizer.py:267] Request s_req_011: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,176 [INFO] [main.py:106] >>> Processing Request s_req_012 for User usr_103 (Amount: 1170.00 USD)
+2026-09-13 19:04:11,177 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:04:11,188 [INFO] [optimizer.py:267] Request s_req_012: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:11,380 [INFO] [main.py:106] >>> Processing Request s_req_013 for User usr_104 (Amount: 1255.00 USD)
+2026-09-13 19:04:11,392 [INFO] [optimizer.py:267] Request s_req_013: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,404 [INFO] [main.py:106] >>> Processing Request s_req_014 for User usr_105 (Amount: 1340.00 USD)
+2026-09-13 19:04:11,428 [INFO] [optimizer.py:267] Request s_req_014: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,582 [INFO] [main.py:106] >>> Processing Request s_req_015 for User usr_101 (Amount: 1425.00 USD)
+2026-09-13 19:04:11,584 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:11,584 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:11,594 [INFO] [optimizer.py:267] Request s_req_015: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,602 [INFO] [main.py:106] >>> Processing Request s_req_016 for User usr_102 (Amount: 1510.00 USD)
+2026-09-13 19:04:11,619 [INFO] [optimizer.py:267] Request s_req_016: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,767 [INFO] [main.py:106] >>> Processing Request s_req_017 for User usr_103 (Amount: 1595.00 USD)
+2026-09-13 19:04:11,768 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:04:11,777 [INFO] [optimizer.py:267] Request s_req_017: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:11,977 [INFO] [main.py:106] >>> Processing Request s_req_018 for User usr_104 (Amount: 1680.00 USD)
+2026-09-13 19:04:11,987 [INFO] [optimizer.py:267] Request s_req_018: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:11,994 [INFO] [main.py:106] >>> Processing Request s_req_019 for User usr_105 (Amount: 1765.00 USD)
+2026-09-13 19:04:12,006 [INFO] [optimizer.py:267] Request s_req_019: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:12,207 [INFO] [main.py:106] >>> Processing Request s_req_020 for User usr_101 (Amount: 1850.00 USD)
+2026-09-13 19:04:12,209 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:12,210 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:12,219 [INFO] [optimizer.py:267] Request s_req_020: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:12,227 [INFO] [main.py:106] >>> Processing Request s_req_021 for User usr_102 (Amount: 1935.00 USD)
+2026-09-13 19:04:12,245 [INFO] [optimizer.py:267] Request s_req_021: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:12,431 [INFO] [main.py:106] >>> Processing Request s_req_022 for User usr_103 (Amount: 2020.00 USD)
+2026-09-13 19:04:12,431 [INFO] [conflict_resolver.py:121] [CONFLICT RESOLVED: Message > Event] Event ev_103_sal (salary) amount updated 1400 -> 1400 per message msg_002
+2026-09-13 19:04:12,440 [INFO] [optimizer.py:267] Request s_req_022: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:12,603 [INFO] [main.py:106] >>> Processing Request s_req_023 for User usr_104 (Amount: 2105.00 USD)
+2026-09-13 19:04:12,613 [INFO] [optimizer.py:267] Request s_req_023: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:12,620 [INFO] [main.py:106] >>> Processing Request s_req_024 for User usr_105 (Amount: 2190.00 USD)
+2026-09-13 19:04:12,637 [INFO] [optimizer.py:267] Request s_req_024: Winning candidate cand_not_recommended [not_recommended] with option NONE
+2026-09-13 19:04:12,828 [INFO] [main.py:106] >>> Processing Request s_req_025 for User usr_101 (Amount: 2275.00 USD)
+2026-09-13 19:04:12,831 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:12,831 [INFO] [conflict_resolver.py:107] [CONFLICT RESOLVED: Message > Event] Event ev_101_gym_dup (gym) marked CANCELLED per message msg_001
+2026-09-13 19:04:12,840 [INFO] [optimizer.py:267] Request s_req_025: Winning candidate cand_partial_two_payments [partial_payment] with option NONE
+2026-09-13 19:04:13,886 [INFO] [main.py:307] =====================================================
+2026-09-13 19:04:13,888 [INFO] [main.py:308] Execution Summary:
+2026-09-13 19:04:13,894 [INFO] [main.py:316]   number_of_requests: 25
+2026-09-13 19:04:13,899 [INFO] [main.py:316]   number_successfully_processed: 25
+2026-09-13 19:04:13,899 [INFO] [main.py:316]   number_of_validation_failures: 0
+2026-09-13 19:04:13,900 [INFO] [main.py:316]   final_audit: {'total_requests': 25, 'rows_written': 25, 'duplicate_request_ids': [], 'missing_request_ids': [], 'invalid_statuses': 0, 'invalid_payment_methods': 0, 'malformed_plans': 0, 'arithmetic_failures': 0, 'safety_failures': 0, 'header_failure': 0, 'row_count_failure': 0, 'total_failures': 0}
+2026-09-13 19:04:13,900 [INFO] [main.py:311]   Validation Statistics:
+2026-09-13 19:04:13,900 [INFO] [main.py:314]     - total_validated: 25
+2026-09-13 19:04:13,901 [INFO] [main.py:314]     - passed_first_pass: 25
+2026-09-13 19:04:13,901 [INFO] [main.py:314]     - repaired_count: 0
+2026-09-13 19:04:13,901 [INFO] [main.py:314]     - fallen_back_count: 0
+2026-09-13 19:04:13,901 [INFO] [main.py:314]     - final_valid: 25
+2026-09-13 19:04:13,902 [INFO] [main.py:314]     - initial_failure_rate_pct: 0.0
+2026-09-13 19:04:13,902 [INFO] [main.py:314]     - final_success_rate_pct: 100.0
+2026-09-13 19:04:13,902 [INFO] [main.py:314]     - violations_detected_by_rule: {}
+2026-09-13 19:04:13,902 [INFO] [main.py:314]     - number_of_repairs: 0
+2026-09-13 19:04:13,903 [INFO] [main.py:314]     - number_of_fallbacks: 0
+2026-09-13 19:04:13,903 [INFO] [main.py:314]     - final_audit: {'total_requests': 25, 'rows_written': 25, 'duplicate_request_ids': [], 'missing_request_ids': [], 'invalid_statuses': 0, 'invalid_payment_methods': 0, 'malformed_plans': 0, 'arithmetic_failures': 0, 'safety_failures': 0, 'header_failure': 0, 'row_count_failure': 0, 'total_failures': 0}
+2026-09-13 19:04:13,904 [INFO] [main.py:316]   requests_requiring_image_extraction: 15
+2026-09-13 19:04:13,904 [INFO] [main.py:316]   requests_requiring_message_interpretation: 10
+2026-09-13 19:04:13,904 [INFO] [main.py:316]   runtime_seconds: 4.72
+2026-09-13 19:04:13,904 [INFO] [main.py:316]   gemini_calls: 0
+2026-09-13 19:04:13,905 [INFO] [main.py:316]   token_usage: {'input_tokens': 0, 'output_tokens': 0, 'total_tokens': 0}
+2026-09-13 19:04:13,905 [INFO] [main.py:316]   estimated_cost_usd: 0.0
+2026-09-13 19:04:13,905 [INFO] [main.py:316]   average_cost_per_request_usd: 0.0
+2026-09-13 19:04:13,906 [INFO] [main.py:317] Output saved to: .audit_tmp\sample_output.csv
+2026-09-13 19:04:13,906 [INFO] [main.py:318] Optimizer output saved to: .audit_tmp\output_optimizer.csv
+2026-09-13 19:04:13,906 [INFO] [main.py:319] Validation statistics saved to: .audit_tmp\validation_statistics.json
+2026-09-13 19:04:13,906 [INFO] [main.py:320] =====================================================
+2026-09-13 19:07:10,978 [ERROR] [evidence_extractor.py:389] JSON decode failed on model response: Expecting value: line 1 column 1 (char 0). Raw: not json

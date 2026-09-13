@@ -1,5 +1,5 @@
 {
-  "evaluation_runtime_seconds": 0.0063,
+  "evaluation_runtime_seconds": 0.0062,
   "total_requests": 250,
   "rows_evaluated": 250,
   "status_accuracy": null,

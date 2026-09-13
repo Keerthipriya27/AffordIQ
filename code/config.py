@@ -12,6 +12,7 @@ MEDIA_IMAGES_DIR = DATASET_DIR / "media" / "images"
 OUTPUT_PATH = Path(os.getenv("OUTPUT_PATH", BASE_DIR / "output.csv"))
 CACHE_DIR = BASE_DIR / ".cache"
 LOGS_DIR = BASE_DIR / "logs"
+LOG_FILE_PATH = BASE_DIR / "log.txt"
 
 # Simulation constants
 SIMULATION_HORIZON_DAYS = 90
@@ -34,7 +35,7 @@ def setup_logging(name: str = "buy_or_wait", log_file: str = "pipeline.log") -> 
         c_handler.setFormatter(c_format)
         logger.addHandler(c_handler)
         
-        f_handler = logging.FileHandler(LOGS_DIR / log_file, encoding="utf-8")
+        f_handler = logging.FileHandler(LOG_FILE_PATH, encoding="utf-8")
         f_format = logging.Formatter("%(asctime)s [%(levelname)s] [%(filename)s:%(lineno)d] %(message)s")
         f_handler.setFormatter(f_format)
         logger.addHandler(f_handler)
