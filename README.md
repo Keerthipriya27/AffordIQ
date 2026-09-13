@@ -9,6 +9,7 @@ writes the strict output file. The React frontend is a read-only presentation
 layer over those generated artifacts; it does not implement financial
 decision logic.
 
+
 ## Run the backend pipeline
 
 From the repository root:
