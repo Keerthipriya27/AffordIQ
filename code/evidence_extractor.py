@@ -104,6 +104,7 @@ class EvidenceExtractor:
             '{"explanation":"..."} with a concise explanation under 280 characters.\n\n'
             f"AUTHORITATIVE_RESULT:\n{json.dumps(grounded_facts, sort_keys=True)}"
         )
+
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
